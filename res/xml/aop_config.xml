@@ -1,0 +1,16 @@
+<beans>
+    <description>Magic configuration</description>
+    
+    <!-- 定义切面 -->
+    <bean id="logAspect" bean="com.magic.aop.aspect.LogAspect"></bean>
+    
+    <!-- aop配置和说明 -->
+    <aop:config>
+        <!-- 定义切面 -->
+        <aop:aspect ref="logAspect">
+            <aop:pointcut expression="execute" id="logPointcut"/>
+            <aop:before pointcut-ref="logPointcut" method="logBegin"/>
+            <aop:after pointcut-ref="logPointcut" method="logEnd">
+        </aop:aspect>
+    </aop:config>
+</beans>
