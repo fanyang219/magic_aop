@@ -20,7 +20,7 @@ public class FileSystemResourceTest extends TestCase {
 	}
 	
 	public void testGetInputStream() throws IOException {
-		resource = new FileSystemResource("test");
+		resource = new FileSystemResource("test11");
 		Assert.assertTrue(resource.getInputStream()==null);
 	}
 	
