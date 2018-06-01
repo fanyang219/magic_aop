@@ -1,5 +1,10 @@
 package com.magic.bean.resource;
 
-public interface Resource {
+import java.io.IOException;
+import java.io.InputStream;
 
+public interface Resource {
+	InputStream getInputStream() throws IOException;
+	
+	boolean exists();
 }
