@@ -1,2 +1,2 @@
-# magic_aop
-搭建一个基本aop框架
+# magic_ioc
+搭建一个基本的ioc框架
