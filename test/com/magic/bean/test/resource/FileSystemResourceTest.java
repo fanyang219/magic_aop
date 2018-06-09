@@ -1,7 +1,5 @@
 package com.magic.bean.test.resource;
 
-import java.io.IOException;
-
 import junit.framework.Assert;
 import junit.framework.TestCase;
 
@@ -19,12 +17,9 @@ public class FileSystemResourceTest extends TestCase {
 		super.tearDown();
 	}
 	
-	public void testGetInputStream() throws IOException {
-		resource = new FileSystemResource("test11");
-		Assert.assertTrue(resource.getInputStream()==null);
-	}
-	
-	public void testValue() {
-		Assert.assertTrue(false);
+	public void testPath() throws Exception {
+		Resource resource = new FileSystemResource("D:/xufan/projectB2-magic-ioc/config.xml");
+		Assert.assertTrue(resource.getInputStream()!=null);
+		Assert.assertTrue(resource.exists());
 	}
 }

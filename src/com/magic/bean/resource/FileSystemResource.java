@@ -1,6 +1,9 @@
 package com.magic.bean.resource;
 
+import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Files;
 
 public class FileSystemResource extends AbstractResource {
 	private String path = "";
@@ -10,14 +13,16 @@ public class FileSystemResource extends AbstractResource {
 	}
 	
 	@Override
-	public InputStream getInputStream() {
-		// TODO Auto-generated method stub
-		return null;
+	public InputStream getInputStream() throws IOException {
+		return Files.newInputStream(getFile().toPath());
 	}
 
 	@Override
 	public boolean exists() {
-		// TODO Auto-generated method stub
-		return false;
+		return getFile().exists();
+	}
+	
+	private File getFile() {
+		return new File(path);
 	}
 }
