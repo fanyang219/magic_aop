@@ -10,4 +10,8 @@ public class DocumentLoaderTest extends TestCase {
 	protected void tearDown() throws Exception {
 		super.tearDown();
 	}
+	
+	public void testString() {
+		
+	}
 }

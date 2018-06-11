@@ -1,5 +1,5 @@
 package com.magic.bean.resource;
 
 public interface ResourceLoader {
-	Resource getResource(String location);
+	Resource getResource(String path);
 }
