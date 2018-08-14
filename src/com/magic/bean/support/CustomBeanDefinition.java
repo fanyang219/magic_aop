@@ -1,6 +1,5 @@
 package com.magic.bean.support;
 
-import com.magic.bean.AbstractBeanDefinition;
 
 /**
  * ¼Ì³Ð¹ØÏµµÄBeanDefinition

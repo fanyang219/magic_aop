@@ -1,6 +1,6 @@
-package com.magic.bean;
+package com.magic.bean.support;
 
-import com.magic.bean.support.PropertyList;
+import com.magic.bean.BeanDefinition;
 
 public abstract class AbstractBeanDefinition implements BeanDefinition {
 	private String id;

@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import org.w3c.dom.Document;
 
-import com.magic.bean.AbstractBeanDefinitionReader;
 import com.magic.bean.BeanDefinitionRegistry;
 import com.magic.bean.core.loader.DefaultDocumentLoader;
 import com.magic.bean.core.loader.DocumentLoader;

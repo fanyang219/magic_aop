@@ -1,7 +1,9 @@
-package com.magic.bean;
+package com.magic.bean.core;
 
 import java.io.IOException;
 
+import com.magic.bean.BeanDefinitionReader;
+import com.magic.bean.BeanDefinitionRegistry;
 import com.magic.bean.core.resource.DefaultResourceLoader;
 import com.magic.bean.core.resource.Resource;
 import com.magic.bean.core.resource.ResourceLoader;
