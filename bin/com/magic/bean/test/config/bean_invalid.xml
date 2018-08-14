@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.invalidframework.org/schema/beans">
+    
+	<bean name="user" class="com.magic.bean.test.User">
+		<property name="id" value="1"/>
+		<property name="name" value="tom"/>
+		<property name="age" value="20"/>
+		<property name="gender" value="1"/>
+	</bean>
+	
+</beans>

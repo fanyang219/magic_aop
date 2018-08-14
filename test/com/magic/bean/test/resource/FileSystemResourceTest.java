@@ -3,8 +3,8 @@ package com.magic.bean.test.resource;
 import junit.framework.Assert;
 import junit.framework.TestCase;
 
-import com.magic.bean.resource.FileSystemResource;
-import com.magic.bean.resource.Resource;
+import com.magic.bean.core.resource.FileSystemResource;
+import com.magic.bean.core.resource.Resource;
 
 public class FileSystemResourceTest extends TestCase {
 	private Resource resource = null;
@@ -18,7 +18,7 @@ public class FileSystemResourceTest extends TestCase {
 	}
 	
 	public void testPath() throws Exception {
-		Resource resource = new FileSystemResource("D:/xufan/projectB2-magic-ioc/config.xml");
+		Resource resource = new FileSystemResource("D:/xufan/project/project-magic-ioc/simple_config.xml");
 		Assert.assertTrue(resource.getInputStream()!=null);
 		Assert.assertTrue(resource.exists());
 	}

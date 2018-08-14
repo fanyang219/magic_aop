@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.magicframework.org/schema/beans">
+    
+    <bean id="worker" name="theWorker" class="com.magic.bean.test.company.Worker"/>
+    <bean id="manager" name="theManager" class="com.magic.bean.test.company.Manager"/>
+	<bean id="company" name="theCompany" class="com.magic.bean.test.company.Company">
+		<constructor-arg ref="worker"></constructor-arg>
+		<constructor-arg ref="manager"></constructor-arg>
+	</bean>
+	
+</beans>

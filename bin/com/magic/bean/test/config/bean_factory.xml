@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.magicframework.org/schema/beans">
+    
+    <bean id="carFactory" class="com.magic.bean.test.car.CarFactory"/>
+	<bean id="car1" factory-bean="carFactory" factory-method="createBMWCar"/>
+	
+</beans>

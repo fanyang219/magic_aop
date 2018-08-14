@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.magicframework.org/schema/beans">
+    
+	<bean id="user" name="user1" class="com.magic.bean.test.User">
+		<property name="id" value="1"/>
+		<property name="name" value="tom"/>
+		<property name="age" value="20"/>
+	</bean>
+	
+	<bean id="vipuser" name="vip1" class="com.magic.bean.test.VipUser" parent="user">
+	    <property name="money" value="500"/>
+	</bean>
+	
+</beans>

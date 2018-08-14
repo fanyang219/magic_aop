@@ -1,10 +1,28 @@
 package com.magic.bean;
 
+import com.magic.bean.support.PropertyList;
+
 /**
- * 针对对象定义的抽象
+ * 描述bean接口
  * 包括:...
  * @author xufan
  */
 public interface BeanDefinition {
+	String getId();
 	
+	void setId(String id);
+	
+	String getName();
+	
+	void setName(String name);
+	
+	String getClassName();
+	
+	void setClassName(String className);
+	
+	String getParentName();
+	
+	void setParentName(String parentName);
+	
+	PropertyList getPropertyList();
 }
